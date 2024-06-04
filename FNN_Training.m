@@ -73,9 +73,9 @@ net.performFcn = 'mse';
 %net.performParam.regularization = 0.1;
 
 % 数据划分
-net.divideParam.trainRatio = 15/100;
+net.divideParam.trainRatio = 35/100;
 net.divideParam.valRatio = 0/100;
-net.divideParam.testRatio = 85/100; 
+net.divideParam.testRatio = 65/100; 
 
 % 训练神经网络
 [net, tr] = train(net, inputs_transpose, y_noisy_t_plus_1_test_2005_transpose);
